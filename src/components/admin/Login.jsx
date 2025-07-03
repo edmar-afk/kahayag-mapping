@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";import { useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
 	const [username, setUsername] = useState("");
@@ -18,12 +17,7 @@ export default function LoginPage() {
 	};
 
 	return (
-		<div
-			className="relative min-h-screen w-full bg-cover bg-center flex items-center justify-center"
-			style={{
-				backgroundImage:
-					"url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRha5kizWZgHqz4rmn_whIMB6xbqfCFG5wEpw&s')",
-			}}>
+		<div className="relative min-h-screen w-full bg-cover bg-center flex items-center justify-center">
 			<div className="absolute inset-0 bg-black/30 backdrop-blur-md z-0"></div>
 
 			<div className="relative z-10 bg-yellow-600 p-8 rounded-xl shadow-lg w-[90%] max-w-md">
