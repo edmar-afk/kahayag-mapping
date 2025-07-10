@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";import api from "../../assets/api";
-
 function InfrasChart() {
 	const [data, setData] = useState([]);
 
@@ -17,7 +16,7 @@ function InfrasChart() {
 		fetchInfras();
 	}, []);
 
-	const defaultImage = "https://images.unsplash.com/photo-1499856871958-5b9627545d1a";
+	const defaultImage = "https://bislig.gov.ph/wp-content/uploads/2021/06/Kahayag-Seal-1-300x300.jpg";
 
 	return (
 		<div className="flex flex-col gap-10 justify-center items-center mt-10">
