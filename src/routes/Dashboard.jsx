@@ -21,7 +21,7 @@ function Dashboard() {
 
 	return (
 		<div className="container mx-auto p-6">
-			<h1 className="text-3xl font-bold text-gray-800 mb-6">Supon Overall Statistics</h1>
+			<h1 className="text-3xl font-bold text-gray-800 mb-6">Kahayag Overall Statistics</h1>
 
 			<div className="grid grid-cols-2 gap-6 mb-6">
 				<div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
