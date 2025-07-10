@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";import api from "../../assets/api";
-
 function HouseholdChart() {
 	const [data, setData] = useState([]);
 
@@ -19,9 +18,7 @@ function HouseholdChart() {
 
 	return (
 		<div className="pt-4">
-			<p className="text-center text-lg font-semibold my-12">
-				Household Members
-			</p>
+			<p className="text-center text-lg font-semibold my-12">Household Members</p>
 
 			{data.length === 0 ? (
 				<p className="text-center text-gray-500 italic">No household data available.</p>
@@ -44,6 +41,12 @@ function HouseholdChart() {
 												Age
 											</th>
 											<th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+												Status
+											</th>
+											<th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+												Purok
+											</th>
+											<th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
 												Role
 											</th>
 										</tr>
@@ -53,6 +56,8 @@ function HouseholdChart() {
 											<tr key={i}>
 												<td className="px-6 py-4 whitespace-nowrap">{member.name}</td>
 												<td className="px-6 py-4 whitespace-nowrap">{member.age}</td>
+												<td className="px-6 py-4 whitespace-nowrap">{member.status}</td>
+												<td className="px-6 py-4 whitespace-nowrap">{member.purok}</td>
 												<td className="px-6 py-4 whitespace-nowrap">{member.role}</td>
 												<td className="px-6 py-4 whitespace-nowrap"></td>
 											</tr>

@@ -1,8 +1,4 @@
-import { useEffect, useState } from "react";import api from "../assets/api";
-import AddMembers from "../components/admin/AddMembers";
-
-function HouseholdMembers() {
-	const [households, setHouseholds] = useState([]);
+import { useEffect, useState } from "react";import api from "../assets/api";import AddMembers from "../components/admin/AddMembers";function HouseholdMembers() {	const [households, setHouseholds] = useState([]);
 
 	const fetchHouseholds = async () => {
 		try {
@@ -53,6 +49,16 @@ function HouseholdMembers() {
 								<th
 									scope="col"
 									className="px-6 py-3">
+									Purok
+								</th>
+								<th
+									scope="col"
+									className="px-6 py-3">
+									Status
+								</th>
+								<th
+									scope="col"
+									className="px-6 py-3">
 									Role
 								</th>
 							</tr>
@@ -67,6 +73,8 @@ function HouseholdMembers() {
 											<td className="px-6 py-4">{idx === 0 ? household.family_name : ""}</td>
 											<td className="px-6 py-4">{member.name}</td>
 											<td className="px-6 py-4">{member.age}</td>
+											<td className="px-6 py-4">{member.purok}</td>
+											<td className="px-6 py-4">{member.status}</td>
 											<td className="px-6 py-4">{member.role}</td>
 										</tr>
 									))
