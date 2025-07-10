@@ -1,5 +1,4 @@
-import { useState } from "react";import { MapContainer, TileLayer, useMapEvents, Marker, Popup } from "react-leaflet";import "leaflet/dist/leaflet.css";
-import L from "leaflet";
+import { useState } from "react";import { MapContainer, TileLayer, useMapEvents, Marker, Popup } from "react-leaflet";import "leaflet/dist/leaflet.css";import L from "leaflet";
 import api from "../assets/api";
 import Sidebar from "./Sidebar";
 import TopBar from "./TopBar";
@@ -108,7 +107,9 @@ function Map() {
 												Name: {item.name} <br />
 												Type: {item.type} <br />
 												<img
-													src={item.image || "https://images.unsplash.com/photo-1499856871958-5b9627545d1a"}
+													src={
+														item.image || "https://bislig.gov.ph/wp-content/uploads/2021/06/Kahayag-Seal-1-300x300.jpg"
+													}
 													alt={item.name}
 													style={{ width: "100%", height: "auto", marginTop: "5px" }}
 												/>
